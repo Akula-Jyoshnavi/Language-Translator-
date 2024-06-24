@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-height: 100vh;
+    background: linear-gradient(35deg, #DAC0A3, #102C57);
+}
+.container{
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    background: #EADBC8;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+.translation_box{
+    border: 1.5px solid #637774;
+    border-radius: 10px;
+    padding: 10px;
+}
+.translation_box .input_textbox{
+    display: flex;
+    border-bottom: 1px solid #383947;
+}
+.input_textbox textarea{
+    height: 280px;
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px ;
+    border-radius: 5px;
+    margin: 10px ;
+}
+.functionalities{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 5px;
+}
+.functionalities li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.exchange{
+  cursor: pointer;
+}
+.functionalities .icons i{
+    width: 30px;
+    font-size: 19px;
+    margin: 2px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    justify-content: center;
+}
+.volumeup{
+  margin-left: 500px;
+  padding: 10px;
+}
+/* .functionalities .icons i:hover{
+  transform: scale(9);
+} */
+ select{
+  margin: 10px;
+ }
+button{
+  width: 100%;
+  padding: 5px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #2b3f5b;
+  color: #DAC0A3;
+  font-size: larger;
+  cursor: pointer;
+  font-weight: 500;
+}
+.functionalities select{
+  border: none;
+  margin: 5px;
+  padding: 10px;
+}
+@media(max-width:700px)
+{
+  .container{
+    padding: 20px;
+  }
+  .translation_box .input_textbox{
+    flex-direction: column;
+  }
+  .input_textbox textarea{
+    height: 200px;
+  }
+  .functionalities select{
+    border: none;
+    margin: 0px 5px;
+    padding: 5px;
+  }
+  .functionalities .icons i{
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .icons{
+    display: flex;
+  }
+}
+
